@@ -42,6 +42,15 @@
   </content_rating>
 
   <releases>
+    <release date="2021-05-04" version="2.841">
+      <description>
+        <ul>
+          <li>Upgrade to new release 2.8.41;</li>
+          <li>Upgrade io.atom.electron.BaseApp to 21.08;</li>
+          <li>Upgrade to OpenJDK17;</li>
+        </ul>
+      </description>
+    </release>
     <release date="2020-07-12" version="2.72">
       <description>
         <ul>

@@ -2,13 +2,13 @@ app-id: org.tlauncher.TLauncher
 command: tlauncher
 
 base: io.atom.electron.BaseApp
-base-version: '19.08'
+base-version: '21.08'
 
 runtime: org.freedesktop.Platform
-runtime-version: '19.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk11
+  - org.freedesktop.Sdk.Extension.openjdk17
 
 tags:
   - proprietary
@@ -74,9 +74,9 @@ modules:
     sources:
       - type: extra-data
         filename: TLauncher.zip
-        url: https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.72.zip
-        sha256: 974583935cc1ec22fa3fa0fc12d90c3963aabe296cc4af03b219379612d28a62
-        size: 4069832
+        url: https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.841.zip
+        sha256: 4290beae8551ab1246d15e4ea4dad58e8d93bf60b5e6acaebdc39eac5d0bb1db
+        size: 4324807
         x-checker-data:
           type: rotating-url
           url: https://tlauncher.org/jar
