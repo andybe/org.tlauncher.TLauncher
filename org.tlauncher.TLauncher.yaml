@@ -1,7 +1,7 @@
 app-id: org.tlauncher.TLauncher
 command: tlauncher
 
-base: io.atom.electron.BaseApp
+base: org.electronjs.Electron2.BaseApp
 base-version: '21.08'
 
 runtime: org.freedesktop.Platform

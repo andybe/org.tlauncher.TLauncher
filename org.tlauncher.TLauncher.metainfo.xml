@@ -46,8 +46,9 @@
       <description>
         <ul>
           <li>Upgrade to new release 2.8.41;</li>
-          <li>Upgrade io.atom.electron.BaseApp to 21.08;</li>
+          <li>Upgrade to flatpak version 21.08;</li>
           <li>Upgrade to OpenJDK17;</li>
+          <li>Move to org.electronjs.Electron2.BaseApp;</li>
         </ul>
       </description>
     </release>
