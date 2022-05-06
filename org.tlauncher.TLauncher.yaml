@@ -1,9 +1,6 @@
 app-id: org.tlauncher.TLauncher
 command: tlauncher
 
-base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
-
 runtime: org.freedesktop.Platform
 runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
@@ -47,21 +44,21 @@ modules:
   - name: gamemode
     buildsystem: meson
     config-opts:
-      - -Dwith-systemd=false
-      - -Dwith-daemon=false
+      - -Dwith-sd-bus-provider=no-daemon
+      - -Dwith-util=false
       - -Dwith-examples=false
     sources:
       - type: archive
-        url: https://github.com/FeralInteractive/gamemode/archive/1.5.1.tar.gz
-        sha256: f5b1aae7d8f2d9da5dae828431b6df7757b31de91b5298372e9247f740f204d0
-        size: 72555
+        url: https://github.com/FeralInteractive/gamemode/archive/1.6.1.tar.gz
+        sha256: 4377b88b5147ebf8d3f9a7a1f94c6d00f1e9624cd171d5af942ce9766be3747f
+        size: 69612
     cleanup:
       - /include
 
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk11/install.sh
+      - /usr/lib/sdk/openjdk17/install.sh
 
   - name: tlauncher
     buildsystem: simple

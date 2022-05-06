@@ -42,6 +42,15 @@
   </content_rating>
 
   <releases>
+    <release date="2021-05-06" version="2.841">
+      <description>
+        <ul>
+          <li>Correct java 17 init;</li>
+          <li>remove electron depency;</li>
+          <li>Upgrade gamemod to 1.6.1</li>
+        </ul>
+      </description>
+    </release>
     <release date="2021-05-04" version="2.841">
       <description>
         <ul>
