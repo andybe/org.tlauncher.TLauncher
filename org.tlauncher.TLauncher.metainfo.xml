@@ -42,6 +42,13 @@
   </content_rating>
 
   <releases>
+    <release date="2022-06-09" version="2.860-1">
+      <description>
+        <ul>
+          <li>Upgrade to version 2.86;</li>
+        </ul>
+      </description>
+    </release>
     <release date="2021-05-06" version="2.841-2">
       <description>
         <ul>
