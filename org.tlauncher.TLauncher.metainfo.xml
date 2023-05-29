@@ -42,10 +42,19 @@
   </content_rating>
 
   <releases>
+    <release date="2023-05-29" version="2.885-1">
+      <description>
+        <ul>
+          <li>Upgrade to version 2.885;</li>
+          <li>Upgrade freedesktop to 22.08</li>
+        </ul>
+      </description>
+    </release>
+    <releases>
     <release date="2022-06-09" version="2.860-1">
       <description>
         <ul>
-          <li>Upgrade to version 2.86;</li>
+          <li>Upgrade to version 2.86</li>
         </ul>
       </description>
     </release>
