@@ -42,6 +42,16 @@
   </content_rating>
 
   <releases>
+    <release date="2023-08-07" version="2.885-2">
+      <description>
+        <ul>
+          <li>Update run script</li>
+          <li>Upgrade xrandr 1.5.2</li>
+          <li>Upgrade gamemode 1.7</li>
+          <li>Downgrade to JAVA 8</li>
+        </ul>
+      </description>
+    </release>
     <release date="2023-05-29" version="2.885-1">
       <description>
         <ul>

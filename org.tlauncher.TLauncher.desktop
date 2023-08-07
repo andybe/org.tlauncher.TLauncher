@@ -4,4 +4,6 @@ Name=TLauncher
 Icon=org.tlauncher.TLauncher
 Exec=tlauncher
 Categories=Game;
+StartupNotify=true
+Terminal=false
 StartupWMClass=org-tlauncher-tlauncher-rmo-TLauncher
