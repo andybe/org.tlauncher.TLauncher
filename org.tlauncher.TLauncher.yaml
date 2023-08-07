@@ -11,9 +11,9 @@ tags:
   - proprietary
 
 finish-args:
-  # Launcher/game files
-  - --filesystem=~/.tlauncher
-  - --filesystem=~/.minecraft
+  # Launcher/game files-
+  - --persist=.tlauncher
+  - --persist=.minecraft
   - --filesystem=~/.config/xsettingsd/xsettingsd.conf:ro
   - --filesystem=xdg-config/fontconfig:ro
   # X11 + XShm
@@ -92,6 +92,7 @@ modules:
           - export LD_PRELOAD="$LD_PRELOAD:/app/lib/libgamemodeauto.so.0"
           - "[ -d $HOME/.tlauncher ] || mkdir $HOME/.tlauncher"
           - "[ -f $HOME/.tlauncher/TLauncher.jar ] || cp /app/extra/* $HOME/.tlauncher/"
+          - "[ -d $HOME/.minecraft ] || mkdir $HOME/.minecraft"
           - exec java -jar $HOME/.tlauncher/TLauncher.jar "$@"
         dest-filename: tlauncher
       - type: file
