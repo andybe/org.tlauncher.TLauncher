@@ -2,7 +2,7 @@ app-id: org.tlauncher.TLauncher
 command: tlauncher
 
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk8
@@ -54,6 +54,11 @@ modules:
         url: https://github.com/FeralInteractive/gamemode/archive/1.7.tar.gz
         sha256: 8a1718c657cb1d3c8269edfd397faf3cb41fccd885198ef0225bf8f82217c42f
         size: 69612
+      - type: patch
+        path: common-pidfds.patch
+        strip-components: 0
+        git: false
+
     cleanup:
       - /include
 
@@ -86,7 +91,6 @@ modules:
           - unzip TLauncher.zip
           - rm -f TLauncher.zip
           - mv TLauncher*.jar TLauncher.jar
-          #- curl -LO https://repo.tlauncher.org/update/lch/TLauncher-2.89.jar -o TLauncher.jar
       - type: script
         commands:
           - export LD_PRELOAD="$LD_PRELOAD:/app/lib/libgamemodeauto.so.0"

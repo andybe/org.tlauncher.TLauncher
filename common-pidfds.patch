@@ -1,0 +1,19 @@
+--- common/common-pidfds.c.org	2023-11-20 23:03:42.153722678 +0100
++++ common/common-pidfds.c	2023-11-20 23:03:36.194722735 +0100
+@@ -46,8 +46,6 @@
+ #include <sys/stat.h>
+ #include <sys/types.h>
+ #include <unistd.h>
+-
+-#if !HAVE_FN_PIDFD_OPEN
+ #include <sys/syscall.h>
+ 
+ #ifndef __NR_pidfd_open
+@@ -58,7 +56,6 @@
+ {
+ 	return (int)syscall(__NR_pidfd_open, pid, flags);
+ }
+-#endif
+ 
+ /* pidfd functions */
+ int open_pidfds(pid_t *pids, int *fds, int count)
