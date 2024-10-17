@@ -42,6 +42,14 @@
   </content_rating>
 
   <releases>
+    <release date="2024-10-17" version="2.885-3">
+      <description>
+        <ul>
+          <li>Upgrade runtime to 24.08</li>
+          <li>Upgrade OpenJDK 11</li>
+        </ul>
+      </description>
+    </release>
     <release date="2023-11-20" version="2.885-3">
       <description>
         <ul>

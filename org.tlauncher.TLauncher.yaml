@@ -2,10 +2,10 @@ app-id: org.tlauncher.TLauncher
 command: tlauncher
 
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk8
+  - org.freedesktop.Sdk.Extension.openjdk11
 
 tags:
   - proprietary
@@ -65,7 +65,7 @@ modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk8/install.sh
+      - /usr/lib/sdk/openjdk11/install.sh
 
   - name: tlauncher
     buildsystem: simple
